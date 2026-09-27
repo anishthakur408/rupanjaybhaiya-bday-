@@ -349,6 +349,63 @@
         .close-btn:hover {
             background: rgba(255, 255, 255, 0.4);
         }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            #intro-overlay {
+                overflow-y: auto;
+                align-items: flex-start;
+            }
+            .intro-step {
+                justify-content: flex-start;
+                height: max-content;
+                min-height: 100vh;
+                padding: 5rem 1rem 3rem 1rem;
+            }
+            .cute-heading {
+                font-size: 2.5rem;
+                margin-top: 1rem;
+            }
+            .cute-text {
+                font-size: 1.1rem;
+                padding: 0 1rem;
+            }
+            .btn-group {
+                flex-direction: column;
+                gap: 1rem;
+                width: 80%;
+                margin: 2rem auto 2rem auto;
+            }
+            .theme-btn {
+                width: 100%;
+                padding: 0.8rem 1rem;
+            }
+            .floral-deco {
+                max-width: 120px;
+                opacity: 0.3;
+            }
+            .top-nav {
+                top: 10px;
+                right: 0;
+                width: 100%;
+                justify-content: center;
+                background: #f8f4e6;
+                padding-bottom: 5px;
+                z-index: 100;
+            }
+            .memory-grid {
+                width: 90%;
+                gap: 1rem;
+                grid-template-columns: 1fr;
+            }
+            .memory-card {
+                transform: rotate(0) !important;
+            }
+            .memory-card img {
+                height: auto;
+                max-height: 250px;
+            }
+        }
     </style>
 </head>
 <body>
